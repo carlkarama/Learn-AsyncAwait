@@ -22,3 +22,17 @@ In JS, there is a concept called first class citizenship. This means functions g
 - You can return a function from a function
 
 if you assign a function to a variable, it becomes a variable expression.
+
+# Keywords
+
+### then
+
+Since JS Promises don't take any arguments we first call the function and use the then keyword to signify what happens next after the promise has been returned
+
+### all
+
+Groups multiple promises into an array and allows each item/process in the array to be completed in parallel with each other without waiting for one to finish
+
+### race
+
+Maybe there is something you want to do straight after you complete one task. It'll return the first one completed.

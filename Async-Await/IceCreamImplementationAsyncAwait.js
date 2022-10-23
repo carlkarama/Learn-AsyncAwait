@@ -16,15 +16,4 @@ let toppingsChoice = () => {
     });
 };
 
-async function kitchen() {
-    console.log("A")
-    console.log("B")
-    console.log("C")
-
-    await toppingsChoice();
-
-    console.log("D")
-    console.log("E")
-}
-
 kitchen()

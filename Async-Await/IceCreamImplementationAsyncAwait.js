@@ -33,9 +33,13 @@ async function kitchen() {
 
     try {
         await abc();
-    } catch {
-        console.log("abc function doesn't exist");
+    } catch(error) {
+        console.log("abc function doesn't exist", error);
     } finally {
         console.log("Run anyway");
     }
 }
+
+kitchen().then(() => {
+    console.log("After our promise runs, this is chaining...")
+})

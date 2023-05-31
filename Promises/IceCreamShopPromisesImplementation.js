@@ -37,12 +37,12 @@ let order = (time, work) => {
 /**
  * @implNote When creating promise chaining make sure to always remove the semi-colon at the end of the statement (;)
  */
-order(1000, () => console.log(`${stocks.Fruits[0]} was selected`))
+order(2000, () => console.log(`${stocks.Fruits[0]} was selected`))
 
     //start production
     .then(() => {
 
-        return order(2000, () => {
+        return order(1000, () => {
             console.log("Production has started")
         });
     })

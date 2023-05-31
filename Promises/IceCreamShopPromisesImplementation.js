@@ -75,6 +75,12 @@ order(2000, () => console.log(`${stocks.Fruits[0]} was selected`))
         })
     })
 
+    // This catch will only work if our promise is rejected.
+    .catch(() => {
+        console.log("Customer has left")
+    })
+
+    // Finally will run whether the promise is resolved or rejected
     .finally(() => {
-        console.log("day ended, shop is closed!")
+        console.log("day has ended, day ended")
     })
